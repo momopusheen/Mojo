@@ -223,28 +223,24 @@
 <!-- End Framework -->
 
 
-<!-- Quant res -->
-<section class="section hero is-light">
-  <div class="hero-body">
-    <div class="columns is-centered has-text-centered">
-      <h2 class="title is-3">Quantitative comparisons</h2>
-    </div>
-    <div class="container is-max-desktop">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/mojo_comp.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-
-          Quantitative comparisons on Wild-TI2I, ImageNet-R-TI2I and ImageNet-Real benchmarks. 
-          Mojo strikes a good balance between faithful editing and image structure.
-        </h2>
+<!-- Framework -->
+<section class="hero teaser is-light">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div style="margin-bottom: 60px;"></div> <!-- 或者使用其他高度 -->
+      <div class="columns is-centered has-text-centered">
+        <h2 class="title is-3">Framework</h2>
+        <div style="margin-bottom: 40px;"></div> <!-- 或者使用其他高度 -->
       </div>
+      <img src="static/images/mojo_comp.png" alt="Methods">
+      <h2 class="subtitle">
+        We first invert the source image to its corresponding latent encoding via DDIM inversion and extract skip connection features during this process. Subsequently, we
+        simultaneously reconstruct the source image and perform image editing using our proposed Skip Connection Modulation (SCM) and Cross-Image Self-Attention (CISA).
+      </h2>
+    </div>
   </div>
-</div>
-</div>
 </section>
-<!-- Quant res -->
+<!-- End Framework -->
 
 
 <!-- Variation image-->
