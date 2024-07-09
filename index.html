@@ -60,7 +60,7 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">LoCo: Locally Constrained Training-Free Layout-to-Image Synthesis</h1>
+            <h1 class="title is-1 publication-title">Mojo: Training-Free Image Editing via Skip Connection Modulation</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
@@ -108,12 +108,12 @@
 
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://huggingface.co/spaces/Pusheen/LoCo" target="_blank"
+                    <a href=" " target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
-                    <span>Demo</span>
+                    <span>Code (Coming Soon)</span>
                   </a>
                 </span>
 
@@ -160,11 +160,10 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <img src="static/images/loco_teaser.png" alt="Intro Image">
+      <img src="static/images/mojo_teaser.png" alt="Intro Image">
       <h2 class="subtitle">
-        Existing training-free layout-to-image synthesis approaches struggle to generate high-quality images that adhere to the given
-        textual prompts and spatial layout. In contrast, LoCo is able to handle various spatial layouts and unusual prompts while maintaining high
-        image quality and precise concept coverage.
+        Variance maps across channels of skip connection features within the U-Net for the text prompt "A superhero in New York City" at the 15-th timestep of the diffusion process. 
+        These skip connection features exhibit high variance in regions corresponding to the structure of the generated image.
       </h2>
     </div>
   </div>
@@ -179,18 +178,22 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Recent text-to-image diffusion models have reached an unprecedented level in generating high-quality images. However, their exclusive reliance on textual prompts often falls short in precise control
-            of image compositions.
+            Text-to-image diffusion models have recently garnered significant attention for their ability to create diverse and realistic visual contents. However, adapting these models for real image editing remains challenging. Existing text-guided image
+            editing methods either struggle to achieve effective editing while maintaining the overall image structure, or require extensive fine-tuning, making them impractical
+            for many applications. 
           </p>
           <p>
-            In this paper, we propose LoCo, a training-free
-            approach for layout-to-image Synthesis that excels in producing highquality images aligned with both textual prompts and layout instructions. Specifically, we introduce a Localized Attention Constraint (LAC),
-            leveraging semantic affinity between pixels in self-attention maps to create precise representations of desired objects and effectively ensure the accurate placement of objects in designated regions. We further propose a Padding Token Constraint (PTC) to leverage the semantic information embedded in previously neglected padding tokens, improving the consistency between object appearance and layout instructions.
+            To address these challenges, we introduce Mojo, a novel
+            training-free approach for effective and structure-preserving image editing. Mojo
+            incorporates two innovative techniques: Skip Connection Modulation (SCM) and
+            Cross Image Self-Attention (CISA). SCM leverages the potential of skip connections within the diffusion U-Net. By modulating skip connection features during
+            image editing process, it retains the source image structure while facilitating
+            successful modifications. CISA further enhances the quality of edited images by
+            improving fine-grained visual details through self-attention transfer. 
           </p>
           <p>
-            LoCo seamlessly integrates into existing text-to-image and layout-to-image models, significantly amplifying their performance and effectively addressing semantic failures observed in prior
-            methods. 
-            Through extensive experiments, we showcase the superiority of our approach, surpassing existing state-ofthe-art training-free layout-to-image methods both qualitatively and quantitatively across multiple benchmarks
+            Extensive experiments show that Mojo outperforms existing image editing methods, delivering
+            superior results in versatile image editing scenarios.
           </p>
         </div>
       </div>
@@ -209,7 +212,7 @@
         <h2 class="title is-3">Framework</h2>
         <div style="margin-bottom: 40px;"></div> <!-- 或者使用其他高度 -->
       </div>
-      <img src="static/images/loco_pipeline.png" alt="Methods">
+      <img src="static/images/mojo_pipeline.png" alt="Methods">
       <h2 class="subtitle">
         We propose two loss functions (constraints) to update the image latent during the denoising process of the text-to-image diffusion model based on the cross-attention maps extracted at each timestep. 
         Optimizing these two losses helps to correctly incorperate the layout instructions into generative process.
