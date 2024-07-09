@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>LoCo</title>
+  <link rel="icon" href="./static/images/favicon.svg">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+  </script>
+  <script type="text/javascript"
+    src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">LoCo: Locally Constrained Training-Free Layout-to-Image Synthesis</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://openreview.net/profile?id=~Peiang_Zhao1">Peiang Zhao</a><sup>1</sup>,</span>
+                  <span class="author-block">
+                    <a href="" target="_blank">Han Li</a><sup>1</sup>,
+                  <span class="author-block">
+                    <a href="" target="_blank">Ruiyang Jin</a><sup>1</sup>,</span>
+                  </span>
+                  <span class="author-block">
+                    <a href="https://scholar.google.com/citations?user=8eNm2GMAAAAJ&hl=en">S. Kevin Zhou</a><sup>1,2&dagger;</sup>,
+                  </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block"><sup>1</sup>University of Science and Technology of China,</span>
+                    <span class="author-block"><sup>2</sup>Key Lab of Intelligent Information Processing of Chinese Academy of Sciences (CAS),<br>Institute of Computing Technology</span>
+                    <!-- <span class="author-block"></span> -->
+                    <span class="email-cntrb"><small><br><sup>&dagger; Indicates Corresponding Author</sup></small></span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/2311.12342" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                    <!-- Supplementary PDF link -->
+                    <!-- <span class="link-block">
+                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supplementary</span>
+                    </a>
+                  </span> -->
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://huggingface.co/spaces/Pusheen/LoCo" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Demo</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2311.12342" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- <section class="hero teaser">
+  </div>
+  Abstract
+  </div>
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+
+        <source src="static/videos/banner_video.mp4"
+        type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+      </h2>
+    </div>
+  </div>
+</section> -->
+
+
+<!-- Introduction image-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="static/images/loco_teaser.png" alt="Intro Image">
+      <h2 class="subtitle">
+        Existing training-free layout-to-image synthesis approaches struggle to generate high-quality images that adhere to the given
+        textual prompts and spatial layout. In contrast, LoCo is able to handle various spatial layouts and unusual prompts while maintaining high
+        image quality and precise concept coverage.
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End introduction Image -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Recent text-to-image diffusion models have reached an unprecedented level in generating high-quality images. However, their exclusive reliance on textual prompts often falls short in precise control
+            of image compositions.
+          </p>
+          <p>
+            In this paper, we propose LoCo, a training-free
+            approach for layout-to-image Synthesis that excels in producing highquality images aligned with both textual prompts and layout instructions. Specifically, we introduce a Localized Attention Constraint (LAC),
+            leveraging semantic affinity between pixels in self-attention maps to create precise representations of desired objects and effectively ensure the accurate placement of objects in designated regions. We further propose a Padding Token Constraint (PTC) to leverage the semantic information embedded in previously neglected padding tokens, improving the consistency between object appearance and layout instructions.
+          </p>
+          <p>
+            LoCo seamlessly integrates into existing text-to-image and layout-to-image models, significantly amplifying their performance and effectively addressing semantic failures observed in prior
+            methods. 
+            Through extensive experiments, we showcase the superiority of our approach, surpassing existing state-ofthe-art training-free layout-to-image methods both qualitatively and quantitatively across multiple benchmarks
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<!-- Framework -->
+<section class="hero teaser is-small">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div style="margin-bottom: 60px;"></div> <!-- 或者使用其他高度 -->
+      <div class="columns is-centered has-text-centered">
+        <h2 class="title is-3">Framework</h2>
+        <div style="margin-bottom: 40px;"></div> <!-- 或者使用其他高度 -->
+      </div>
+      <img src="static/images/loco_pipeline.png" alt="Methods">
+      <h2 class="subtitle">
+        We propose two loss functions (constraints) to update the image latent during the denoising process of the text-to-image diffusion model based on the cross-attention maps extracted at each timestep. 
+        Optimizing these two losses helps to correctly incorperate the layout instructions into generative process.
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End Framework -->
+
+
+<!-- Visual comparison -->
+<section class="section hero is-light">
+  <div class="hero-body">
+    <div class="columns is-centered has-text-centered">
+      <h2 class="title is-3">Visual comparisons with competing training-free methods</h2>
+    </div>
+    <div class="container is-max-desktop">
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/comp1.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Visual comparisons with different baselines across various prompts.
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/comp2.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Comparisons with different baselines across free-form layout conditions.
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/first_teaser.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Visual comparisons with previous state-of-the-art methods.
+       </h2>
+     </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End Visual comparison -->
+
+
+<!-- Variation image-->
+<section class="section hero is-small">
+  <div class="hero-body">
+    <div class="columns is-centered has-text-centered">
+      <h2 class="title is-3">Visual variations across complex prompts</h2>
+    </div>
+    <div class="container is-max-desktop">
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/comp3.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Visual comparisons on fine-grained prompts.
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/comp4.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Visual comparisons on unusual prompts.
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/comp5.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Visual comparisons on fine-grained prompts.
+       </h2>
+     </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/comp6.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Visual comparisons on fine-grained prompts.
+      </h2>
+    </div>
+
+  </div>
+</div>
+</div>
+</section>
+<!-- End variation image -->
+
+<!-- Quant res -->
+<section class="section hero is-light">
+  <div class="hero-body">
+    <div class="columns is-centered has-text-centered">
+      <h2 class="title is-3">Quantitative comparisons</h2>
+    </div>
+    <div class="container is-max-desktop">
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/exp1.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Quantitative results on HRS and DrawBench. LoCo enhances the spatial controllability of the vanilla Stable Diffusion model significantly.
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/gligen.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          LoCo surves as a plug-and-play booster to existing layout-to-image model.
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/time.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          LoCo strikes outstanding trade-off between inference time and spatial control effects.
+        </h2>
+      </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- Quant res -->
+
+
+<!-- Image carousel -->
+
+<!-- End image carousel -->
+
+
+
+
+<!-- Youtube video -->
+
+<!-- End youtube video -->
+
+
+<!-- Video carousel -->
+
+<!-- End video carousel -->
+
+
+
+
+
+
+<!-- Paper poster -->
+<!-- <section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Poster</h2>
+
+      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
+          </iframe>
+        
+      </div>
+    </div>
+  </section> -->
+<!--End paper poster -->
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>
+    @article{zhao2023loco,
+      title={LoCo: Locally Constrained Training-Free Layout-to-Image Synthesis},
+      author={Zhao, Peiang and Li, Han and Jin, Ruiyang and Zhou, S Kevin},
+      journal={arXiv preprint arXiv:2311.12342},
+      year={2023}
+    }
+    </code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
