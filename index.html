@@ -214,8 +214,8 @@
       </div>
       <img src="static/images/mojo_pipeline.png" alt="Methods">
       <h2 class="subtitle">
-        We propose two loss functions (constraints) to update the image latent during the denoising process of the text-to-image diffusion model based on the cross-attention maps extracted at each timestep. 
-        Optimizing these two losses helps to correctly incorperate the layout instructions into generative process.
+        We first invert the source image to its corresponding latent encoding via DDIM inversion and extract skip connection features during this process. Subsequently, we
+        simultaneously reconstruct the source image and perform image editing using our proposed Skip Connection Modulation (SCM) and Cross-Image Self-Attention (CISA).
       </h2>
     </div>
   </div>
@@ -233,25 +233,11 @@
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <!-- Your image here -->
-        <img src="static/images/comp1.png" alt="MY ALT TEXT"/>
+        <img src="static/images/mojo_comp.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
           Visual comparisons with different baselines across various prompts.
         </h2>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/comp2.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Comparisons with different baselines across free-form layout conditions.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/first_teaser.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Visual comparisons with previous state-of-the-art methods.
-       </h2>
-     </div>
   </div>
 </div>
 </div>
@@ -274,20 +260,7 @@
           Visual comparisons on fine-grained prompts.
         </h2>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/comp4.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Visual comparisons on unusual prompts.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/comp5.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Visual comparisons on fine-grained prompts.
-       </h2>
-     </div>
+
       <div class="item">
         <!-- Your image here -->
         <img src="static/images/comp6.png" alt="MY ALT TEXT"/>
@@ -312,23 +285,10 @@
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <!-- Your image here -->
-        <img src="static/images/exp1.png" alt="MY ALT TEXT"/>
+        <img src="static/images/mojo_res.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          Quantitative results on HRS and DrawBench. LoCo enhances the spatial controllability of the vanilla Stable Diffusion model significantly.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/gligen.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          LoCo surves as a plug-and-play booster to existing layout-to-image model.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/time.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          LoCo strikes outstanding trade-off between inference time and spatial control effects.
+          Quantitative comparisons on Wild-TI2I, ImageNet-R-TI2I and ImageNet-Real benchmarks. 
+          Mojo strikes a good balance between faithful editing and image structure preservation.
         </h2>
       </div>
   </div>
